@@ -24,13 +24,14 @@ body {
 }
 
 #content {
-    font-family: "Open Sans Condensed", sans-serif;
+    /*font-family: "Open Sans Condensed", sans-serif;*/
+    font-family: 'Josefin Sans', sans-serif;
     z-index: 1;
 }
 
 #intro {
-    font-size: 100px;
-    font-weight: 300;
+    font-size: 150px;
+    font-weight: 100;
     margin-top: 400px;
     text-align: center;
 }
