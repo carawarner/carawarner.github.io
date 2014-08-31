@@ -1,0 +1,15 @@
+* {
+    position: relative;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url(/images/cloudy-landscape.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left bottom!important;
+    min-height: 100%;
+}
