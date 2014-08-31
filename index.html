@@ -4,6 +4,7 @@
 
     <meta charset="utf-8" />
     <meta name="description" content="My personal page and playground." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
@@ -11,15 +12,85 @@
 
 </head>
 <body>
-    <div class="content">
-        <div class="foreground">
-            <h1>I am Cara. I am a <span>tea fiend.</span></h1>
-            <a class="button" href="#">SEE WHAT I DO</a>
-        </div>
 
-        <div id="bg1" class="background"></div>
+    <div id="preload">
+        <img src="img/cloudy-landscape.jpg">
+        <img src="img/earthy-landscape.jpg">
+        <img src="img/mossy-landscape.jpg">
     </div>
 
+    <!-- Welcome Message -->
+    <section id="hello" class="parallax">
+        <div class="background"
+             data-center="background-position: 50% 0%;"
+             data-top-bottom="background-position: 50% -400%;"
+             data-anchor-target="#hello"
+        >
+            <div class="container">
+                <div class="content"
+                     data-center="bottom: 200px; opacity: 1"
+                     data-anchor-target="#hello h1"
+                >
+                    <h1>I am Cara. I am a <span>tea fiend.</span></h1>
+                    <a class="button" href="#">SEE WHAT I DO</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about" class="parallax">
+        <div class="background"
+             data-center="background-position: 50% 0px;"
+             data-top-bottom="background-position: 50% -100px;"
+             data-anchor-target="#about"
+                >
+            <div class="container">
+                <div class="content"
+                     data-center="bottom: 200px; opacity: 1"
+                     data-top="bottom: 1200px; opacity: 0"
+                     data-anchor-target="#about h1"
+                        >
+                    <h1>I write code</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Me -->
+    <section id="contact" class="parallax">
+        <div class="background"
+             data-center="background-position: 50% 0px;"
+             data-top-bottom="background-position: 50% -100px;"
+             data-anchor-target="#contact"
+                >
+            <div class="container">
+                <div class="content"
+                     data-center="bottom: 200px; opacity: 1"
+                     data-top="bottom: 1200px; opacity: 0"
+                     data-anchor-target="#contact h1"
+                        >
+                    <h1>Contact Me</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--<div class="content">-->
+        <!--<div class="foreground">-->
+            <!--<h1>I am Cara. I am a <span>tea fiend.</span></h1>-->
+            <!--<a class="button" href="#">SEE WHAT I DO</a>-->
+        <!--</div>-->
+
+        <!--<div id="bg1" class="background"></div>-->
+    <!--</div>-->
+
     <!-- Scripts -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
+    <script src="js/imagesloaded.js"></script>
+    <script src="js/skrollr.js"></script>
     <script src="js/main.js"></script>
 </body>

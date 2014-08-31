@@ -1,14 +1,16 @@
+/* ==========================================================================
+   Global styles
+   ========================================================================== */
+
 * {
     position: relative;
 }
 
-html {
-    min-height: 100%;
-}
-
-body {
+body, html {
     height: 100%;
+    min-height: 100%;
     font-family: 'Josefin Sans', sans-serif;
+    /*overflow: hidden;*/
 }
 
 h1 {
@@ -42,30 +44,60 @@ h1 {
     }
 
 
-/* Layers */
-.foreground {
-    z-index: 2;
-}
+/* ==========================================================================
+   Parallax
+   ========================================================================== */
 
-.midground {
-    z-index: 1;
-}
-
-.background {
-    z-index: 0;
-}
-
-
-/* Images */
-#bg1 {
-    background-image: url(/img/cloudy-landscape.jpg);
-    background-position: left bottom!important;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: fixed;
+#preload {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
+}
+
+.paralax {
+
+    }
+    .paralax .container {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    .parallax .content {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+    }
+    .parallax .background {
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+    }
+
+/* ==========================================================================
+   Section-specific styling
+   ========================================================================== */
+
+#hello {
+    }
+    #hello .background {
+        background-image:url('../img/cloudy-landscape.jpg')
+    }
+    #hello .content {
+        width: 1600px;
+        margin-left: -800px;
+    }
+
+#about .background {
+    background-image:url('../img/earthy-landscape.jpg')
+}
+
+#contact .background {
+    background-image:url('../img/mossy-landscape.jpg')
 }
