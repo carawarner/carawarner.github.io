@@ -43,10 +43,20 @@ h1 {
 
 
 /* Layers */
-#article1 {
+.foreground {
+    z-index: 2;
+}
+
+.midground {
     z-index: 1;
 }
 
+.background {
+    z-index: 0;
+}
+
+
+/* Images */
 #bg1 {
     background-image: url(/img/cloudy-landscape.jpg);
     background-position: left bottom!important;
