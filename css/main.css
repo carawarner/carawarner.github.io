@@ -90,9 +90,12 @@ h1 {
         background-image:url('../img/cloudy-landscape.jpg')
     }
     #hello .content {
-        width: 1600px;
+        position: fixed;
         margin-left: -800px;
+        width: 1600px;
+        top: 200px;
     }
+
 
 #about .background {
     background-image:url('../img/earthy-landscape.jpg')
