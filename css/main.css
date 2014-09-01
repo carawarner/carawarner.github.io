@@ -44,6 +44,7 @@ h1 {
     margin-right: auto;
     padding: 40px 0 40px 0;
     text-align: center;
+    text-transform: uppercase;
     -webkit-transition: all 0.2s ease;
     width: 465px;
     }
@@ -56,15 +57,6 @@ h1 {
 /* ==========================================================================
    Parallax
    ========================================================================== */
-
-#preload {
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
 
 .paralax {
     }
@@ -87,6 +79,16 @@ h1 {
    Section-specific styling
    ========================================================================== */
 
+#hello {
+    }
+    #hello .background {
+        background-image:url('../img/cloudy-landscape.jpg')
+    }
+    #hello .content {
+        position: fixed;
+        margin-left: 5%;
+        width: 90%;
+    }
 
 #about {
     }
@@ -98,20 +100,15 @@ h1 {
         margin: 0px;
         font-size: 70px;
         padding-top: 100px;
-        width: 50%;
-        margin-left: 25%;
+        width: 254px;
+        margin-left: -127px;
+        left: 50%;
+        border-bottom: 10px solid black;
     }
 
-#hello {
-    }
-    #hello .background {
-        background-image:url('../img/cloudy-landscape.jpg')
-    }
-    #hello .content {
-        position: fixed;
-        margin-left: 5%;
-        width: 90%;
-    }
+.sticky-heading {
+    width: 100%;
+}
 
 #quote {
     }

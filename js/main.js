@@ -7,7 +7,7 @@
 
     adjustWindow();
 
-    $("#about h1").sticky({topSpacing:0});
+    $(".sticky-heading").sticky({topSpacing:0});
 
     function adjustWindow(){
 
