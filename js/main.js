@@ -2,7 +2,7 @@
 
     // Setup variables
     $window = $(window);
-    $parallax = $('.parallax');
+    $parallax = $('.fill-port');
     $body = $('body');
 
     adjustWindow();
