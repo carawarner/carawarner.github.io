@@ -93,14 +93,12 @@ h1 {
         position: fixed;
         margin-left: -800px;
         width: 1600px;
-        top: 200px;
+        top: 0px;
     }
 
 
 #about .background {
-    background-image:url('../img/earthy-landscape.jpg')
 }
 
 #contact .background {
-    background-image:url('../img/mossy-landscape.jpg')
 }
