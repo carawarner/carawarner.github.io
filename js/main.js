@@ -7,6 +7,8 @@
 
     adjustWindow();
 
+    $("#about h1").sticky({topSpacing:0});
+
     function adjustWindow(){
 
         // Init Skrollr

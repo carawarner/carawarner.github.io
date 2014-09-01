@@ -21,9 +21,6 @@ h1 {
     text-align: center;
     text-transform: uppercase;
     }
-    h1 > span {
-        color: #A73228;
-    }
 
 .subheading {
     text-align: center;
@@ -95,6 +92,14 @@ h1 {
     }
     #about .background {
         background-color: white;
+    }
+    #about h1 {
+        color: black;
+        margin: 0px;
+        font-size: 70px;
+        padding-top: 100px;
+        width: 50%;
+        margin-left: 25%;
     }
 
 #hello {
