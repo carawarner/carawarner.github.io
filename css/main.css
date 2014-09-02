@@ -109,7 +109,7 @@ h1 {
 .sticky-heading {
     background: rgba(255,255,255,0.9);
     width: 100%;
-    z-index: 2;
+    z-index: 9999;
 }
 .sticky-wrapper {
     margin-bottom: 60px;
@@ -131,7 +131,7 @@ h1 {
    ========================================================================== */
 
 #projects {
-    padding: 0 10px;
+    padding: 0 25px;
 }
 
 #projects .project {
@@ -140,43 +140,12 @@ h1 {
     float: left;
 }
 
-#projects .project .description {
-    text-align: left;
-    padding: 20px 20px 100px 0;
-}
-
-#projects .project .description p {
-    line-height: 16px;
-    padding: 0 0 20px 0;
-}
-
-#projects .project .description p.name {
-    font-size: 14px;
-    letter-spacing: 0.025em;
-    line-height: normal;
-    padding: 0 0 5px 0;
-}
-
-#projects .project .description p.recognition {
-    opacity: 0.6;
-    padding: 0 0 5px 0;
-}
-
-#projects .project .description p.roles {
-    opacity: 0.6;
-}
-
-#projects .project .description ul {
-    list-style: none;
-    overflow: hidden;
-}
-
-.project .description ul li {
-    padding: 0 10px 0 0;
-    float: left;
+#projects .project .padding {
+    padding: 0 25px;
 }
 
 #projects .project .image {
+    margin-bottom: 10px;
     width: 100%; height: auto;
 }
 
@@ -188,6 +157,7 @@ h1 {
 }
 
 #projects .project .image img {
+    display: block;
     width: 100%; height: auto;
 }
 
@@ -195,31 +165,12 @@ h1 {
     display: none;
     position: absolute;
     top: 0; left: 0;
-    z-index: 997;
+    z-index: 100;
+    -webkit-transition: all 0.2s ease;
 }
 
-#projects .project .image .span-circle {
-    width: 5px; height: 5px;
-    border-width: 5px;
-    border-style: solid;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-    display: none;
-    position: absolute;
-    top: 0; left: 0;
-    z-index: 998;
-}
-
-#projects .project .image .span-line {
-    width: 15px; height: 5px;
-    display: none;
-    position: absolute;
-    top: 0; left: 0;
-    z-index: 999;
-}
-
-#projects .project .padding {
-    padding: 0 10px;
+#projects .project .image:hover img.image-color {
+    opacity: 1;
+    display: block;
 }
 
