@@ -135,9 +135,11 @@ h1 {
 }
 
 #projects .project {
-    width: 33.33%; height: auto;
+    width: 33.33%;
+    height: auto;
     overflow: hidden;
     float: left;
+    margin-bottom: 20px;
 }
 
 #projects .project .padding {
@@ -172,3 +174,17 @@ h1 {
     display: block;
 }
 
+/* Responsive */
+@media (max-width: 1000px) {
+    #projects .project {
+        width: 50%;
+    }
+}
+@media (max-width: 600px) {
+    #projects .project {
+        width: 100%;
+    }
+    #projects .project .image img.image-color {
+        display: block;
+    }
+}
