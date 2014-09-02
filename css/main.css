@@ -14,39 +14,39 @@ body, html {
 
 h1 {
     color: white;
-    font-size: 120px;
+    font-size: 40px;
     font-weight: 400;
-    letter-spacing: 15px;
-    margin: 500px 0 80px 0;
+    letter-spacing: 5px;
+    margin: 165px 0 25px 0;
     text-align: center;
     text-transform: uppercase;
-    }
+}
 
 .subheading {
     text-align: center;
     color: white;
-    font-size: 45px;
-    letter-spacing: 20px;
-    margin-bottom: 180px;
-    padding: 20px;
+    font-size: 15px;
+    letter-spacing: 7px;
+    margin-bottom: 60px;
+    padding: 10px;
     text-transform: uppercase;
 }
 
 .button {
-    background-color: rgba(255,255,255,0.3);
-    border: 8px solid rgb(35,39,26);
+    background-color: rgba(255,255,255,0.4);
+    border: 2px solid rgb(35,39,26);
     color: black;
     display: block;
     font-family: sans-serif;
-    font-size: 30px;
+    font-size: 10px;
     font-weight: bold;
     margin-left: auto;
     margin-right: auto;
-    padding: 40px 0 40px 0;
+    padding: 13px 0 13px 0;
     text-align: center;
     text-transform: uppercase;
     -webkit-transition: all 0.2s ease;
-    width: 465px;
+    width: 155px;
     }
     .button:hover {
         background-color: rgb(35,39,26);
@@ -98,16 +98,21 @@ h1 {
     #about h1 {
         color: black;
         margin: 0px;
-        font-size: 70px;
-        padding-top: 100px;
-        width: 254px;
-        margin-left: -127px;
+        font-size: 22px;
+        padding-top: 30px;
+        width: 82px;
+        margin: 0 0 40px -41px;
         left: 50%;
-        border-bottom: 10px solid black;
+        border-bottom: 3px solid black;
     }
 
 .sticky-heading {
+    background: rgba(255,255,255,0.9);
     width: 100%;
+    z-index: 2;
+}
+.sticky-wrapper {
+    margin-bottom: 60px;
 }
 
 #quote {
@@ -119,3 +124,102 @@ h1 {
     #quote .content {
         font-size: 80px;
     }
+
+
+/* ==========================================================================
+   Section-specific styling
+   ========================================================================== */
+
+#projects {
+    padding: 0 10px;
+}
+
+#projects .project {
+    width: 33.33%; height: auto;
+    overflow: hidden;
+    float: left;
+}
+
+#projects .project .description {
+    text-align: left;
+    padding: 20px 20px 100px 0;
+}
+
+#projects .project .description p {
+    line-height: 16px;
+    padding: 0 0 20px 0;
+}
+
+#projects .project .description p.name {
+    font-size: 14px;
+    letter-spacing: 0.025em;
+    line-height: normal;
+    padding: 0 0 5px 0;
+}
+
+#projects .project .description p.recognition {
+    opacity: 0.6;
+    padding: 0 0 5px 0;
+}
+
+#projects .project .description p.roles {
+    opacity: 0.6;
+}
+
+#projects .project .description ul {
+    list-style: none;
+    overflow: hidden;
+}
+
+.project .description ul li {
+    padding: 0 10px 0 0;
+    float: left;
+}
+
+#projects .project .image {
+    width: 100%; height: auto;
+}
+
+#projects .project .image a {
+    width: 100%; height: auto;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+#projects .project .image img {
+    width: 100%; height: auto;
+}
+
+#projects .project .image img.image-color {
+    display: none;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 997;
+}
+
+#projects .project .image .span-circle {
+    width: 5px; height: 5px;
+    border-width: 5px;
+    border-style: solid;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    display: none;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 998;
+}
+
+#projects .project .image .span-line {
+    width: 15px; height: 5px;
+    display: none;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 999;
+}
+
+#projects .project .padding {
+    padding: 0 10px;
+}
+
