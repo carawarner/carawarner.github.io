@@ -4,96 +4,64 @@
 
     <meta charset="utf-8" />
     <meta name="description" content="My personal page and playground." />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
-    <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,400' rel='stylesheet' type='text/css'>
-
 </head>
 <body>
 
-    <!-- Welcome Message -->
-    <section id="hello" class="parallax fill-port">
-        <div class="background"
-             data-center="background-position: 50% 0px;"
-             data-top-bottom="background-position: 50% -600px;"
-             data-anchor-target="#hello"
-        >
-            <div class="container">
-                <div class="content">
-                    <div
-                        data-0p="opacity: 1"
-                        data-10p="opacity: 0"
-                    >
-                        <h1>Cara Warner</h1>
+    <div id="hello" class="slide">
+        <div>
+            <h1>Cara Warner</h1>
+            <p class="subheading">developer, runner & tea fiend</p>
+        </div>
+    </div>
 
-                    </div>
-                    <div
-                        data-5p="opacity: 1"
-                        data-15p="opacity: 0"
-                    >
-                        <p class="subheading">developer, runner & tea fiend</p>
-                    </div>
-                    <div
-                        data-10p="opacity: 1"
-                        data-20p="opacity: 0"
-                    >
-                        <a class="button" href="#">See what I do</a>
-                    </div>
+    <div id="stats" class="slide content-slide">
+        <h1>Stats</h1>
+    </div>
 
+    <div id="work" class="slide content-slide">
+        <h1>Work</h1>
+
+        <div id="projects">
+            <!-- OpenSky -->
+            <div class="project" id="open-sky">
+                <div class="padding">
+                    <div class="image">
+                        <img class="image-black-white" src="/img/openSky.png"/>
+                        <img class="image-color" src="/img/openSky.png"/>
+                    </div>
+                    <div class="description">
+                        <p class="name">OpenSky</p>
+                        <p class="roles">Developer, 2012 - present</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- About -->
-    <section id="about" class="parallax fill-port">
-        <div class="background">
-            <div class="container">
-                <div class="content">
-                    <div class="sticky-heading">
-                        <h1>Work</h1>
+            <!-- My Github Page -->
+            <div class="project" id="github-page">
+                <div class="padding">
+                    <div class="image">
+                        <img class="image-black-white" src="/img/githubPage.png"/>
+                        <img class="image-color" src="/img/githubPage.png"/>
                     </div>
-
-                    <div id="projects">
-                        <!-- OpenSky -->
-                        <div class="project" id="open-sky">
-                            <div class="padding">
-                                <div class="image">
-                                    <img class="image-black-white" src="/img/openSky-bw.png"/>
-                                    <img class="image-color" src="/img/openSky.png"/>
-                                </div>
-                                <div class="description">
-                                    <p class="name">OpenSky</p>
-                                    <p class="roles"></p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- My Github Page -->
-                        <div class="project" id="github-page">
-                            <div class="padding">
-                                <div class="image">
-                                    <img class="image-black-white" src="/img/githubPage-bw.png"/>
-                                    <img class="image-color" src="/img/githubPage.png"/>
-                                </div>
-                                <div class="description">
-                                    <p class="name">This page!</p>
-                                    <p class="roles"></p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="description">
+                        <p class="name">This page!</p>
+                        <p class="roles">Personal Project 2014</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <!-- Scripts -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
-    <script src="js/skrollr.js"></script>
-    <script src="js/jquery.sticky.js"></script>
-    <script src="js/main.js"></script>
+    <div id="quote" class="slide">
+        <p>"Outside of a dog, man's best friend is a book.
+        Inside of a dog, it is too dark to read."</p>
+    </div>
+
+    <div id="contact" class="slide header">
+        <h1>Get in Touch</h1>
+    </div>
+
 </body>

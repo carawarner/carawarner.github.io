@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:100,400);
+
 /* ==========================================================================
    Global styles
    ========================================================================== */
@@ -6,10 +8,9 @@
     position: relative;
 }
 
-body, html {
+html {
     height: 100%;
-    min-height: 100%;
-    font-family: 'Josefin Sans', sans-serif;
+    overflow: hidden;
 }
 
 h1 {
@@ -17,9 +18,17 @@ h1 {
     font-size: 40px;
     font-weight: 400;
     letter-spacing: 5px;
-    margin: 165px 0 25px 0;
     text-align: center;
     text-transform: uppercase;
+}
+
+.content-slide h1 {
+    border-bottom: 3px solid black;
+    color: black;
+    font-size: 22px;
+    left: 50%;
+    margin: 0 0 40px -41px;
+    width: 82px;
 }
 
 .subheading {
@@ -47,87 +56,90 @@ h1 {
     text-transform: uppercase;
     -webkit-transition: all 0.2s ease;
     width: 155px;
-    }
-    .button:hover {
-        background-color: rgb(35,39,26);
-        color: white;
-    }
+}
+.button:hover {
+    background-color: rgb(35,39,26);
+    color: white;
+}
 
 
 /* ==========================================================================
-   Parallax
+   Faux Parallax
    ========================================================================== */
 
-.paralax {
-    }
-    .paralax .container {
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        position: relative;
-    }
-    .parallax .background {
-        background-position: bottom center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        height: 100%;
-        width: 100%;
-    }
+body {
+    margin:0;
+    padding:0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.slide {
+    position: relative;
+    padding: 25vh 10%;
+    min-height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    transform-style: inherit;
+}
+
+.slide:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left:0;
+    right:0;
+}
+
+.slide, .slide:before {
+    background: 50% 50% / cover;
+}
 
 /* ==========================================================================
    Section-specific styling
    ========================================================================== */
 
 #hello {
-    }
-    #hello .background {
-        background-image:url('../img/cloudy-landscape.jpg')
-    }
-    #hello .content {
-        position: fixed;
-        margin-left: 5%;
-        width: 90%;
-    }
-
-#about {
-    }
-    #about .background {
-        background-color: white;
-    }
-    #about h1 {
-        color: black;
-        margin: 0px;
-        font-size: 22px;
-        padding-top: 30px;
-        width: 82px;
-        margin: 0 0 40px -41px;
-        left: 50%;
-        border-bottom: 3px solid black;
-    }
-
-.sticky-heading {
-    background: rgba(255,255,255,0.9);
-    width: 100%;
-    z-index: 9999;
+    background-image: url('../img/cloudy-landscape.jpg');
+    background-attachment: fixed;
 }
-.sticky-wrapper {
-    margin-bottom: 60px;
+#hello h1 {
+    margin: 0 0 25px 0;
+}
+#stats {
+    background-color: #FFF;
+}
+
+/*#stats:before {*/
+/*background-image: url("http://lorempixel.com/output/abstract-q-c-640-480-4.jpg");*/
+/*transform: translateZ(-1px) scale(2);*/
+/*z-index:-1;*/
+/*}*/
+
+#work {
+    background-color: #E5E5E5;
 }
 
 #quote {
-    }
-    #quote .background {
-        background-color: gray;
-        padding: 300px;
-    }
-    #quote .content {
-        font-size: 80px;
-    }
+    font-size: 70px;
+}
+#quote:before {
+    background-image: url('../img/cloudy-landscape.jpg');
+    transform: translateZ(-1px) scale(2);
+    z-index:-1;
+}
 
+#contact {
+    background: #222;
+}
 
 /* ==========================================================================
-   Section-specific styling
+   Project grid styling
    ========================================================================== */
 
 #projects {
