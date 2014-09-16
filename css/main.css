@@ -27,6 +27,7 @@ h1 {
     border-bottom: 3px solid black;
     color: black;
     font-size: 22px;
+    margin: 30px 0 60px 0;
 }
 
 .subheading {
@@ -78,13 +79,12 @@ body {
 }
 
 .slide {
-    position: relative;
-    padding: 25vh 10%;
-    min-height: 100vh;
-    width: 100vw;
     box-sizing: border-box;
-    transform-style: inherit;
+    min-height: 100vh;
+    position: relative;
     text-align: center;
+    transform-style: inherit;
+    width: 100vw;
 }
 
 .slide:before {
@@ -107,6 +107,7 @@ body {
 #hello {
     background-image: url('../img/cloudy-landscape.jpg');
     background-attachment: fixed;
+    padding: 25vh 10%;
     }
     #hello h1 {
         background-color: rgba(0,0,0,.1);
@@ -151,6 +152,7 @@ body {
 
 #projects {
     padding: 60px 25px;
+    text-align: left;
 }
 
 #projects .project {
