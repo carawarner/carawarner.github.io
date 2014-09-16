@@ -15,6 +15,7 @@ html {
 
 h1 {
     color: white;
+    display: inline-block;
     font-size: 40px;
     font-weight: 400;
     letter-spacing: 5px;
@@ -26,18 +27,16 @@ h1 {
     border-bottom: 3px solid black;
     color: black;
     font-size: 22px;
-    left: 50%;
-    margin: 0 0 40px -41px;
-    width: 82px;
 }
 
 .subheading {
-    text-align: center;
     color: white;
+    display: inline-block;
     font-size: 15px;
     letter-spacing: 7px;
     margin-bottom: 60px;
     padding: 10px;
+    text-align: center;
     text-transform: uppercase;
 }
 
@@ -85,6 +84,7 @@ body {
     width: 100vw;
     box-sizing: border-box;
     transform-style: inherit;
+    text-align: center;
 }
 
 .slide:before {
@@ -107,10 +107,17 @@ body {
 #hello {
     background-image: url('../img/cloudy-landscape.jpg');
     background-attachment: fixed;
-}
-#hello h1 {
-    margin: 0 0 25px 0;
-}
+    }
+    #hello h1 {
+        background-color: rgba(0,0,0,.1);
+        margin: 0 0 25px 0;
+        padding: 10px 10px 2px 10px; /* Josephine floats above baseline slightly */
+    }
+    #hello .subheading {
+        background: rgba(0,0,0,0.1);
+        padding: 10px 10px 6px 10px; /* Josephine floats above baseline slightly */
+    }
+
 #stats {
     background-color: #FFF;
 }
