@@ -123,12 +123,6 @@ body {
     background-color: #FFF;
 }
 
-/*#stats:before {*/
-/*background-image: url("http://lorempixel.com/output/abstract-q-c-640-480-4.jpg");*/
-/*transform: translateZ(-1px) scale(2);*/
-/*z-index:-1;*/
-/*}*/
-
 #work {
     background-color: #E5E5E5;
 }
@@ -153,47 +147,41 @@ body {
 #projects {
     padding: 60px 25px;
     text-align: left;
-}
-
-#projects .project {
-    width: 33.33%;
-    height: auto;
-    overflow: hidden;
-    float: left;
-    margin-bottom: 20px;
-}
-
-#projects .project .padding {
-    padding: 0 25px;
-}
-
-#projects .project .image {
-    margin-bottom: 10px;
-    width: 100%; height: auto;
-}
-
-#projects .project .image a {
-    width: 100%; height: auto;
-    display: block;
-    position: relative;
-    overflow: hidden;
-}
-
-#projects .project .image img {
-    display: block;
-    width: 100%; height: auto;
-}
-
-#projects .project .image img.image-color {
-    display: none;
-    position: absolute;
-    top: 0; left: 0;
-    z-index: 100;
-}
-
-#projects .project .image:hover img.image-color {
-    display: block;
-}
+    }
+    #projects .project {
+        width: 33.33%;
+        height: auto;
+        overflow: hidden;
+        float: left;
+        margin-bottom: 20px;
+    }
+    #projects .project .padding {
+        padding: 0 25px;
+    }
+    #projects .project .image {
+        margin-bottom: 10px;
+        width: 100%; height: auto;
+        }
+        #projects .project .image a {
+            width: 100%; height: auto;
+            display: block;
+            position: relative;
+            overflow: hidden;
+        }
+        #projects .project .image img {
+            display: block;
+            width: 100%; height: auto;
+            }
+            #projects .project .image .project-hero {
+                -webkit-filter: grayscale(1);  /* Google Chrome, Safari 6+ & Opera 15+ */
+                filter: url(filters.svg#grayscale);  /* Firefox 3.5+ */
+                filter: gray;  /* IE6-9 */
+            }
+            #projects .project .image .project-hero:hover {
+                filter: none;
+                -webkit-filter: grayscale(0);
+                -webkit-transition: 1s ease;
+            }
 
 /* Responsive */
 @media (max-width: 1000px) {
@@ -204,8 +192,5 @@ body {
 @media (max-width: 600px) {
     #projects .project {
         width: 100%;
-    }
-    #projects .project .image img.image-color {
-        display: block;
     }
 }
