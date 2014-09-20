@@ -15,7 +15,6 @@ html {
 body {
     margin:0;
     padding:0;
-    perspective: 1px;
     transform-style: preserve-3d;
     height: 100%;
     overflow-y: scroll;
@@ -33,6 +32,13 @@ h1 {
     text-align: center;
     text-transform: uppercase;
 }
+
+a {
+    color: #FFF;
+    }
+    a:hover {
+        color: #DE4E00;
+    }
 
 .dark-overlay {
     background: rgba(0,0,0,0.3);
@@ -54,7 +60,6 @@ h1 {
         position: relative;
     }
     #navigation li a {
-        color: #FFF;
         display: block;
         font-size: 11px;
         font-weight: 700;
@@ -75,6 +80,7 @@ h1 {
 .slide {
     box-sizing: border-box;
     min-height: 100vh;
+    perspective: 1px;
     position: relative;
     text-align: center;
     transform-style: inherit;
@@ -104,7 +110,7 @@ h1 {
     background-position: center center;
     }
     #hello h1 {
-        margin: 40vh 0 0 0;
+        margin: 35vh 0 20px 0;
     }
     #hello:before {
         transform: translateZ(-1px) scale(2);
