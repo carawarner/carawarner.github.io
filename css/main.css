@@ -161,27 +161,32 @@ a {
         #bio .bio-item .padding {
             padding: 0 25px;
         }
-        #bio .bio-item .image {
+        #bio .bio-item .content {
             margin-bottom: 10px;
             width: 100%; height: auto;
             }
-            #bio .bio-item .image a {
-                width: 100%; height: auto;
-                display: block;
-                position: relative;
-                overflow: hidden;
+            #bio .bio-item .content .description {
+                color: white;
+                font-size: 12px;
+                letter-spacing: 1px;
+                padding: 20px;
+                position: absolute;
+                text-transform: uppercase;
+                top: 0;
+                width: 100%;
+                z-index: 3;
             }
-            #bio .bio-item .image img {
+            #bio .bio-item .content img {
                 display: block;
                 width: 100%; height: auto;
             }
-            #bio .bio-item .image img.image-color {
+            #bio .bio-item .content img.image-color {
                 display: none;
                 position: absolute;
                 top: 0; left: 0;
-                z-index: 100;
+                z-index: 2;
             }
-            #bio .bio-item .image:hover img.image-color {
+            #bio .bio-item .content:hover img.image-color {
                 display: block;
             }
 
@@ -213,7 +218,7 @@ a {
     #bio .bio-item {
         width: 100%;
     }
-    #bio .bio-item .image img.image-color {
+    #bio .bio-item .content img.image-color {
         display: block;
     }
 }
