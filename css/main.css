@@ -152,11 +152,11 @@ a {
     text-align: left;
     }
     #bio .bio-item {
-        width: 33.33%;
+        display: inline-block;
         height: auto;
-        overflow: hidden;
-        float: left;
         margin-bottom: 20px;
+        overflow: hidden;
+        width: 33%;
         }
         #bio .bio-item .padding {
             padding: 0 25px;
@@ -185,7 +185,11 @@ a {
                 display: block;
             }
 
-/* Mobile */
+
+/* ==========================================================================
+   Section-specific styling
+   ========================================================================== */
+
 @media (max-width: 600px) {
     h1 {
         font-size: 40px;
@@ -208,5 +212,8 @@ a {
     }
     #bio .bio-item {
         width: 100%;
+    }
+    #bio .bio-item .image img.image-color {
+        display: block;
     }
 }
