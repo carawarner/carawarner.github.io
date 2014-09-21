@@ -1,4 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,700|Roboto+Slab:400,700);
+
 /* ==========================================================================
    Global styles
    ========================================================================== */
@@ -19,7 +20,7 @@ body {
     overflow-y: scroll;
     overflow-x: hidden;
     font-family: "Roboto", sans-serif;
-    font-weight: 100;
+    font-weight: 400;
 }
 
 h1 {
@@ -30,6 +31,17 @@ h1 {
     letter-spacing: 2px;
     text-align: center;
     text-transform: uppercase;
+}
+
+h2 {
+    color: gray;
+    font-size: 28px;
+    font-weight: 100;
+    margin: 20px;
+}
+
+.subheading {
+    color: gray;
 }
 
 a {
@@ -65,7 +77,8 @@ a {
     }
 
 .content-slide {
-    padding-top: 55px;
+    background-color: #FFF;
+    padding-top: 15vh;
 }
 
 /* ==========================================================================
@@ -82,9 +95,12 @@ a {
     -webkit-transition: all 0.4s ease;
     }
     #navigation.inverted {
-        background-color:rgba(75,77,73,0.9);
-        color:#FFF;
-    }
+        background-color:rgba(255,255,255,0.9);
+        }
+        #navigation.inverted a {
+            color: #000;
+        }
+
     #navigation li {
         float: right;
         padding: 20px 15px;
@@ -131,11 +147,20 @@ a {
         position: fixed;
         width: 100%;
     }
+    #hello #disclaimer {
+        font-weight: 100;
+    }
 
 /* Responsive */
 @media (max-width: 1000px) {
 }
 @media (max-width: 600px) {
+    h2 {
+        font-size: 20px;
+    }
+    .subheading {
+        font-size: 14px;
+    }
     #disclaimer {
         display: none;
     }
