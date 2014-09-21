@@ -192,8 +192,14 @@ a {
 
 
 /* ==========================================================================
-   Section-specific styling
+   Responsive
    ========================================================================== */
+
+@media (max-width: 900px) {
+    #bio .bio-item {
+        width: 100%;
+    }
+}
 
 @media (max-width: 600px) {
     h1 {
@@ -214,9 +220,6 @@ a {
     }
     #navigation li a {
         line-height: 0px;
-    }
-    #bio .bio-item {
-        width: 100%;
     }
     #bio .bio-item .content img.image-color {
         display: block;
