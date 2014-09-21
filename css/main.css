@@ -150,7 +150,7 @@ a {
     }
 
 #bio {
-    padding: 25vh 25px 25px 25px;
+    padding: 25vh 25px;
     text-align: left;
     }
     #bio .bio-item {
@@ -192,20 +192,23 @@ a {
             }
 
 #quotes {
-    background-image: url('/img/icewater.jpg');
-    background-size: cover;
-    color: white;
-    font-size: 60px;
-    height: 450px;
-    padding: 200px 40px;
+    padding: 0 10vh 25vh 10vh;
+    }
+    #quotes p {
+        font-size: 60px;
+        font-weight: 700;
+    }
+    #quotes span {
+        color: #A33900;
     }
 
-#contact {
-    padding: 10vh;
-}
-
 #footer {
-    background-color: darkgray;
+    background-color: #E2E2E2;
+    color: white;
+    font-weight: 100;
+    font-size: 14px;
+    height: 50px;
+    padding: 20px;
 }
 
 /* ==========================================================================
@@ -215,9 +218,6 @@ a {
 @media (max-width: 900px) {
     #bio .bio-item {
         width: 100%;
-    }
-    #quotes {
-        font-size: 40px;
     }
 }
 
@@ -241,10 +241,17 @@ a {
     #navigation li a {
         line-height: 0px;
     }
+    #bio {
+        padding: 15vh 15px;
+    }
+    #bio .bio-item .padding {
+        padding: 0;
+    }
     #bio .bio-item .content img.image-color {
         display: block;
     }
     #quotes {
-        padding: 150px 20px;
+        font-size: 40px;
+        padding: 0 10vh 15vh 10vh;
     }
 }
