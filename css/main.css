@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,700|Roboto+Slab:400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Slab:300);
 
 /* ==========================================================================
    Global styles
@@ -42,6 +42,10 @@ h2 {
 
 .subheading {
     color: gray;
+}
+
+span {
+    color: #C9710C;
 }
 
 a {
@@ -156,7 +160,6 @@ a {
     #bio .bio-item {
         display: inline-block;
         height: auto;
-        overflow: hidden;
         width: 33%;
         }
         #bio .bio-item .padding {
@@ -166,7 +169,7 @@ a {
             margin-bottom: 10px;
             width: 100%; height: auto;
             }
-            #bio .bio-item .content .description {
+            #bio .bio-item .content .hashtag {
                 color: white;
                 font-size: 12px;
                 letter-spacing: 1px;
@@ -175,29 +178,43 @@ a {
                 text-transform: uppercase;
                 top: 0;
                 width: 100%;
-                z-index: 3;
+                z-index: 4;
             }
             #bio .bio-item .content img {
                 display: block;
                 width: 100%; height: auto;
+                z-index: 2;
             }
             #bio .bio-item .content img.image-color {
                 display: none;
                 position: absolute;
                 top: 0; left: 0;
-                z-index: 2;
+                z-index: 3;
             }
             #bio .bio-item .content:hover img.image-color {
                 display: block;
             }
+        #bio .bio-item .description {
+            bottom: 0px;
+            color: #021326;
+            font-family: "Roboto Slab", serif;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 1.4;
+            padding: 5px;
+            position: absolute;
+            -webkit-transition: -webkit-transform 0.3s ease;
+            z-index: 1;
+        }
+        #bio .bio-item:hover .description {
+            -webkit-transform: translate3d(0,100%,0);
+        }
+
 
 #quotes {
     padding: 0 10% 10% 10%;
     font-size: 60px;
     font-weight: 700;
-    }
-    #quotes span {
-        color: #A33900;
     }
 
 #footer {
@@ -251,8 +268,12 @@ a {
     #bio .bio-item .content img.image-color {
         display: block;
     }
+    #bio .bio-item .description {
+        display: none;
+    }
+
     #quotes {
         padding: 0 10% 15% 10%;
-        font-size: 40px;
+        font-size: 30px;
     }
 }
