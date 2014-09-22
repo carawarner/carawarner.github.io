@@ -239,6 +239,9 @@ a {
     #navigation li a {
         line-height: 0px;
     }
+    #hello h1 {
+        margin: 250px 0 20px 0;
+    }
     #bio {
         padding: 15% 15px;
     }
