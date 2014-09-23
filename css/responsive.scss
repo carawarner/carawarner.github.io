@@ -6,6 +6,12 @@
 	#bio {
 		.bio-item {
 			width: 100%;
+			.image-color {
+				display: block; // Don't wait for hover on mobile
+			}
+			.description {
+				-webkit-transform: translate3d(0,100%,0);
+			}
 		}
 	}
 }
@@ -13,13 +19,10 @@
 @media (max-width: 600px) {
 	#bio {
 		.bio-item {
-			padding: 0;
-		}
-		.image-color {
-			display: block; // Don't wait for hover on mobile
+			padding: 15px 0;
 		}
 		.description {
-			display: none; // Don't show description on mobile
+			display: none;
 		}
 	}
 	#quote {
@@ -29,5 +32,4 @@
 	h1 {
 		font-size: 40px;
 	}
-
 }

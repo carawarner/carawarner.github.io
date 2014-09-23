@@ -4,8 +4,6 @@ $lightColor: #FFF;
 $accentColor: #C9710C;
 $lightGray: #E2E2E2;
 
-@import "responsive";
-
 /* ==========================================================================
    Global styles
    ========================================================================== */
@@ -38,6 +36,9 @@ a {
 }
 
 .dark-overlay {
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%; height: 100%;
 	background: rgba(0,0,0,0.3); //TODO: check compatibility
 }
 
@@ -49,6 +50,7 @@ h1 {
 	letter-spacing: 2px;
 	text-align: center;
 	text-transform: uppercase;
+	width: 100%;
 }
 
 span {
@@ -60,12 +62,13 @@ span {
    ========================================================================== */
 
 #hello {
+	background: 50% 50% / cover;
 	background-attachment: fixed;
 	background-color: #ABB3B6; //to complement background image
 	background-position: center center;
 	height: 100%;
 	h1 {
-		margin: 40% 0 20px 0;
+		margin: 40vh 0 20px 0;
 	}
 	#scroll-down {
 		position: absolute;
@@ -82,7 +85,11 @@ span {
 	.bio-item {
 		display: inline-block;
 		height: auto;
+		padding: 25px;
 		width: 33%;
+		.content {
+			width: 100%; height: 100%;
+		}
 		.hashtag {
 			position: absolute;
 			top: 0; left: 0;
@@ -96,7 +103,7 @@ span {
 		.description {
 			position: absolute;
 			bottom: 0px; left: 0px;
-			color: $accentColor;
+			color: #021326;
 			font-family: "Roboto Slab", serif;
 			font-weight: 300;
 			line-height: 1.4;
@@ -130,6 +137,8 @@ span {
 	padding: 0 10% 10% 10%;
 	font-size: 60px;
 	font-weight: 700;
+	text-align: center;
+	width: 100%;
 }
 
 #footer {
@@ -138,3 +147,5 @@ span {
 	height: 50px;
 	padding: 20px;
 }
+
+@import "responsive.scss";

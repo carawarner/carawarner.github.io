@@ -1,24 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Slab:300);
 /* ==========================================================================
-   Responsive
-   ========================================================================== */
-@media (max-width: 900px) {
-  #bio .bio-item {
-    width: 100%; } }
-@media (max-width: 600px) {
-  #bio .bio-item {
-    padding: 0; }
-  #bio .image-color {
-    display: block; }
-  #bio .description {
-    display: none; }
-
-  #quote {
-    font-size: 30px; }
-
-  h1 {
-    font-size: 40px; } }
-/* ==========================================================================
    Global styles
    ========================================================================== */
 * {
@@ -44,6 +25,11 @@ a {
     color: #C9710C; }
 
 .dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: rgba(0, 0, 0, 0.3); }
 
 h1 {
@@ -53,7 +39,8 @@ h1 {
   font-weight: 700;
   letter-spacing: 2px;
   text-align: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  width: 100%; }
 
 span {
   color: #C9710C; }
@@ -62,12 +49,13 @@ span {
    Section-specific styling
    ========================================================================== */
 #hello {
+  background: 50% 50% / cover;
   background-attachment: fixed;
   background-color: #ABB3B6;
   background-position: center center;
   height: 100%; }
   #hello h1 {
-    margin: 40% 0 20px 0; }
+    margin: 40vh 0 20px 0; }
   #hello #scroll-down {
     position: absolute;
     left: 0;
@@ -83,7 +71,11 @@ span {
   #bio .bio-item {
     display: inline-block;
     height: auto;
+    padding: 25px;
     width: 33%; }
+    #bio .bio-item .content {
+      width: 100%;
+      height: 100%; }
     #bio .bio-item .hashtag {
       position: absolute;
       top: 0;
@@ -98,7 +90,7 @@ span {
       position: absolute;
       bottom: 0px;
       left: 0px;
-      color: #C9710C;
+      color: #021326;
       font-family: "Roboto Slab", serif;
       font-weight: 300;
       line-height: 1.4;
@@ -124,12 +116,36 @@ span {
 #quote {
   padding: 0 10% 10% 10%;
   font-size: 60px;
-  font-weight: 700; }
+  font-weight: 700;
+  text-align: center;
+  width: 100%; }
 
 #footer {
   background-color: #E2E2E2;
   color: #FFF;
   height: 50px;
   padding: 20px; }
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+@media (max-width: 900px) {
+  #bio .bio-item {
+    width: 100%; }
+    #bio .bio-item .image-color {
+      display: block; }
+    #bio .bio-item .description {
+      -webkit-transform: translate3d(0, 100%, 0); } }
+@media (max-width: 600px) {
+  #bio .bio-item {
+    padding: 15px 0; }
+  #bio .description {
+    display: none; }
+
+  #quote {
+    font-size: 30px; }
+
+  h1 {
+    font-size: 40px; } }
 
 /*# sourceMappingURL=main.css.map */
