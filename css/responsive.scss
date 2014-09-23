@@ -1,0 +1,33 @@
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+
+@media (max-width: 900px) {
+	#bio {
+		.bio-item {
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	#bio {
+		.bio-item {
+			padding: 0;
+		}
+		.image-color {
+			display: block; // Don't wait for hover on mobile
+		}
+		.description {
+			display: none; // Don't show description on mobile
+		}
+	}
+	#quote {
+		font-size: 30px;
+	}
+
+	h1 {
+		font-size: 40px;
+	}
+
+}

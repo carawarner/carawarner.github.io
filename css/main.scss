@@ -1,0 +1,140 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Slab:300);
+
+$lightColor: #FFF;
+$accentColor: #C9710C;
+$lightGray: #E2E2E2;
+
+@import "responsive";
+
+/* ==========================================================================
+   Global styles
+   ========================================================================== */
+
+* {
+  position: relative;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	height: 100%;
+	margin: 0;
+	overflow-x: hidden;
+  	overflow-y: scroll;
+  	padding: 0;
+  	transform-style: preserve-3d; //TODO: check compatibility?
+}
+
+a {
+	color: $lightColor;
+	:hover, .selected {
+		color: $accentColor;
+	}
+}
+
+.dark-overlay {
+	background: rgba(0,0,0,0.3); //TODO: check compatibility
+}
+
+h1 {
+	color: $lightColor;
+	display: inline-block;
+	font-size: 80px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+span {
+	color: $accentColor;
+}
+
+/* ==========================================================================
+   Section-specific styling
+   ========================================================================== */
+
+#hello {
+	background-attachment: fixed;
+	background-color: #ABB3B6; //to complement background image
+	background-position: center center;
+	height: 100%;
+	h1 {
+		margin: 40% 0 20px 0;
+	}
+	#scroll-down {
+		position: absolute;
+		left: 0; bottom: 30px;
+		width: 100%; height: 50px;
+		margin: auto;
+		text-align: center;
+	}
+}
+
+#bio {
+	padding: 10% 25px;
+	text-align: left;
+	.bio-item {
+		display: inline-block;
+		height: auto;
+		width: 33%;
+		.hashtag {
+			position: absolute;
+			top: 0; left: 0;
+			font-size: 12px;
+			color: white;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			padding: 20px;
+			z-index: 10;
+		}
+		.description {
+			position: absolute;
+			bottom: 0px; left: 0px;
+			color: $accentColor;
+			font-family: "Roboto Slab", serif;
+			font-weight: 300;
+			line-height: 1.4;
+			padding: 5px;
+			z-index: 1;
+			-webkit-transition: -webkit-transform 0.3s ease;
+		}
+		img {
+			display: block;
+			width: 100%; height: auto;
+			z-index: 2;
+		}
+		.image-color {
+			display: none;
+			position: absolute;
+			top: 0; left: 0;
+			z-index: 3;
+		}
+	}
+	.bio-item:hover {
+		.image-color {
+			display: block;
+		}
+		.description {
+			-webkit-transform: translate3d(0,100%,0);
+		}
+	}
+}
+
+#quote {
+	padding: 0 10% 10% 10%;
+	font-size: 60px;
+	font-weight: 700;
+}
+
+#footer {
+	background-color: $lightGray;
+	color: $lightColor;
+	height: 50px;
+	padding: 20px;
+}
