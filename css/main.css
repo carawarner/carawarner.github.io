@@ -191,7 +191,7 @@ a {
                 top: 0; left: 0;
                 z-index: 3;
             }
-            #bio .bio-item .content:hover img.image-color {
+            #bio .bio-item:hover .content img.image-color {
                 display: block;
             }
         #bio .bio-item .description {
