@@ -23,7 +23,7 @@ a {
   color: #FFF; }
 
 a:hover {
-  color: #C9710C; }
+  text-decoration: underline; }
 
 .dark-overlay {
   position: absolute;
@@ -122,8 +122,8 @@ span {
   width: 100%; }
 
 #footer {
-  background-color: #ABB3B6;
-  color: #021326;
+  background-color: #C9710C;
+  color: #FFF;
   padding: 40px;
   font-family: "Roboto Slab", serif;
   font-size: 12px;

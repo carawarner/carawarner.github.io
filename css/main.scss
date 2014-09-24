@@ -33,7 +33,7 @@ a {
 	color: $lightColor;
 }
 a:hover {
-	color: $accentColor;
+	text-decoration: underline;
 }
 
 .dark-overlay {
@@ -143,8 +143,8 @@ span {
 }
 
 #footer {
-	background-color: #ABB3B6;
-	color: $blueBlack;
+	background-color: $accentColor;
+	color: $lightColor;
 	padding: 40px;
 	font-family: "Roboto Slab", serif;
 	font-size: 12px;
