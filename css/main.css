@@ -21,7 +21,7 @@ body {
 
 a {
   color: #FFF; }
-  a :hover, a .selected {
+  a:hover {
     color: #C9710C; }
 
 .dark-overlay {
@@ -114,17 +114,24 @@ span {
     -webkit-transform: translate3d(0, 100%, 0); }
 
 #quote {
-  padding: 0 10% 10% 10%;
+  padding: 0 10% 15% 10%;
   font-size: 60px;
   font-weight: 700;
   text-align: center;
   width: 100%; }
 
 #footer {
-  background-color: #E2E2E2;
-  color: #FFF;
-  height: 50px;
-  padding: 20px; }
+  background-color: #ABB3B6;
+  color: #021326;
+  padding: 40px;
+  font-family: "Roboto Slab", serif;
+  font-size: 12px;
+  line-height: 1.4; }
+  #footer .half {
+    display: inline-block;
+    width: 49%; }
+  #footer .right {
+    text-align: right; }
 
 /* ==========================================================================
    Responsive
@@ -144,6 +151,14 @@ span {
 
   #quote {
     font-size: 30px; }
+
+  #footer .half {
+    width: 100%; }
+  #footer .right {
+    text-align: left;
+    margin-top: 10px;
+    border-top: 1px solid white;
+    padding-top: 10px; }
 
   h1 {
     font-size: 40px; } }

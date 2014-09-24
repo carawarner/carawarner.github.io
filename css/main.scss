@@ -3,6 +3,7 @@
 $lightColor: #FFF;
 $accentColor: #C9710C;
 $lightGray: #E2E2E2;
+$blueBlack: #021326;
 
 /* ==========================================================================
    Global styles
@@ -30,9 +31,9 @@ body {
 
 a {
 	color: $lightColor;
-	:hover, .selected {
-		color: $accentColor;
-	}
+}
+a:hover {
+	color: $accentColor;
 }
 
 .dark-overlay {
@@ -103,7 +104,7 @@ span {
 		.description {
 			position: absolute;
 			bottom: 0px; left: 0px;
-			color: #021326;
+			color: $blueBlack;
 			font-family: "Roboto Slab", serif;
 			font-weight: 300;
 			line-height: 1.4;
@@ -134,7 +135,7 @@ span {
 }
 
 #quote {
-	padding: 0 10% 10% 10%;
+	padding: 0 10% 15% 10%;
 	font-size: 60px;
 	font-weight: 700;
 	text-align: center;
@@ -142,10 +143,19 @@ span {
 }
 
 #footer {
-	background-color: $lightGray;
-	color: $lightColor;
-	height: 50px;
-	padding: 20px;
+	background-color: #ABB3B6;
+	color: $blueBlack;
+	padding: 40px;
+	font-family: "Roboto Slab", serif;
+	font-size: 12px;
+	line-height: 1.4;
+	.half {
+		display:inline-block;
+		width: 49%;
+	}
+	.right {
+		text-align: right;
+	}
 }
 
 @import "responsive.scss";
