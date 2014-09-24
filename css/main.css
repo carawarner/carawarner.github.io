@@ -21,8 +21,9 @@ body {
 
 a {
   color: #FFF; }
-  a:hover {
-    color: #C9710C; }
+
+a:hover {
+  color: #C9710C; }
 
 .dark-overlay {
   position: absolute;
@@ -114,7 +115,7 @@ span {
     -webkit-transform: translate3d(0, 100%, 0); }
 
 #quote {
-  padding: 0 10% 15% 10%;
+  padding: 0 10% 13% 10%;
   font-size: 60px;
   font-weight: 700;
   text-align: center;
