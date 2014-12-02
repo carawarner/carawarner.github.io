@@ -12,17 +12,27 @@
 </head>
 <body>
 
-    <div id="hello">
-        <div class="dark-overlay"></div>
-        <h1>Hello there. I'm Cara.</h1><br>
+    <!-- Welcome Message -->
+    <section id="hello" class="parallax">
+        <div class="background"
+             data-center="background-position: 50% 0px;"
+             data-top-bottom="background-position: 50% -200px;"
+             data-anchor-target="#hello">
 
-        <div id="scroll-down">
-            <img src="/img/icons/go-down.png" />
+            <div class="dark-overlay"></div>
+            <div class="container">
+                <div class="content">
+                    <div data-50="opacity: 1" data-350="opacity: 0">
+                        <h1>Hello there. I'm Cara.</h1><br>
+                    </div>
+                </div>
+            </div>
+
         </div>
+    </section>
 
-    </div>
-
-    <div id="about">
+    <!-- Bio -->
+    <section id="about" class="parallax">
         <div id="bio">
             <!-- Developer -->
             <div class="bio-item">
@@ -69,15 +79,15 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div id="quote">
+    <section id="quote" class="parallax">
         <p>
             I can't say I've never eaten fermented shark but I can say this: <span>never again.</span>
         </p>
-    </div>
+    </section>
 
-    <div id="footer">
+    <section id="footer">
         <div class="left half">
             Email me: <a href="mailto:warnercara@gmail.com">warnercara@gmail.com</a></br>
             Find me on Git: <a href="http://github.com/carawarner">github.com/carawarner</a>
@@ -86,10 +96,11 @@
             Landscape photograph by <a href="https://www.flickr.com/photos/chartno3">Jonathan Percy</a></br>
             Lego portraits by <a href="https://www.flickr.com/photos/bfishadow">bfishadow</a>
         </div>
-    </div>
+    </section>
 
     <!-- Scripts -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
+    <script src="js/skrollr.js"></script>
     <script src="js/main.js"></script>
 </body>

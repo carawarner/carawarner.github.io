@@ -58,25 +58,59 @@ span {
 	color: $accentColor;
 }
 
+
+/* ==========================================================================
+   Parallax
+   ========================================================================== */
+
+#preload {
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.paralax {
+	.background {
+		background-position: bottom center;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		height: 100%;
+		width: 100%;
+	}
+	.container {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		position: relative;
+	}
+	.content {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+	}
+}
+
 /* ==========================================================================
    Section-specific styling
    ========================================================================== */
 
 #hello {
-	background: 50% 50% / cover;
-	background-attachment: fixed;
-	background-color: #ABB3B6; //to complement background image
-	background-position: center center;
-	height: 100%;
+	height: 100vh;
 	h1 {
 		margin: 40vh 0 20px 0;
+		position: fixed;
 	}
-	#scroll-down {
-		position: absolute;
-		left: 0; bottom: 30px;
-		width: 100%; height: 50px;
-		margin: auto;
-		text-align: center;
+	.background {
+		background: 50% 50% / cover;
+		background-attachment: fixed;
+		background-color: #ABB3B6; //to complement background image
+		background-image: url('../img/cloudy-landscape.jpg');
+		background-position: center center;
+		height: 100%;
 	}
 }
 
