@@ -1,10 +1,9 @@
 carawarner.github.io
 ====================
 
-This is my personal page:
+This is my CSS sandbox:
 http://carawarner.github.io
 
-It was an opportunity to try out the following:
-* parallax scroll effects
-* sticky elements
-* jQuery waypoints
+It's not modern. It's not sexy. It's a sandbox.
+
+"Come on in! The sand is great!"
